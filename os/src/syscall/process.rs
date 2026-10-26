@@ -54,6 +54,6 @@ pub fn sys_trace(trace_request: usize, id: usize, data: usize) -> isize {
 
         2 => crate::task::get_syscall_count(id),
 
-        _ => 1,
+        _ => -1,
     }
 }
